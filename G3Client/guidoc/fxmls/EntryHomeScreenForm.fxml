@@ -14,7 +14,7 @@
             <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <Button fx:id="btnEnter" layoutX="284.0" layoutY="392.0" mnemonicParsing="false" onAction="#getEnterBtn" prefHeight="64.0" prefWidth="94.0" style="-fx-background-color: #7FBA00;" text="Enter" textFill="#383838">
+      <Button fx:id="btnEnter" layoutX="279.0" layoutY="386.0" mnemonicParsing="false" onAction="#getEnterBtn" prefHeight="64.0" prefWidth="94.0" style="-fx-background-color: #7FBA00;" text="Enter" textFill="#383838">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
@@ -37,6 +37,11 @@
       <Button fx:id="btnHelp" layoutX="40.0" layoutY="-1.0" mnemonicParsing="false" onAction="#getHelpBtn" prefHeight="43.0" prefWidth="36.0" style="-fx-background-color: #00BFFF;" text="?" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="importBtn" layoutX="203.0" layoutY="460.0" mnemonicParsing="false" onAction="#getImportBtn" prefHeight="14.0" prefWidth="244.0" style="-fx-background-color: #7FBA00;" text="Import  data from system managament" textFill="#383838">
+         <font>
+            <Font name="System Bold" size="12.0" />
          </font>
       </Button>
    </children>

@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="503.0" prefWidth="649.0" style="-fx-background-color: #7d7d7d;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers_gui.UserPortalOfCEOController">
+<Pane prefHeight="503.0" prefWidth="649.0" style="-fx-background-color: #7d7d7d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers_gui.UserPortalOfCEOController">
    <children>
       <Button fx:id="btnViewQuarterlyReports" layoutX="6.0" layoutY="122.0" mnemonicParsing="false" onAction="#getQuarterlyReports" prefHeight="43.0" prefWidth="366.0" text="View quarterly reports issued by the branch managers">
          <font>
@@ -27,7 +27,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="405.0" layoutY="5.0" text="Home Screen -&gt; Login -&gt;" />
+      <Label layoutX="433.0" layoutY="8.0" text="Home Screen -&gt; Login -&gt;" />
       <Label layoutX="576.0" layoutY="8.0" text="Main Screen">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -47,5 +47,12 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Text>
+      <Label layoutX="9.0" layoutY="244.0" text="Status:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fx:id="textOfStatus" layoutX="58.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="112.50733351707458" />
+      <Text fx:id="errorText" layoutX="222.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="204.07031998038292" />
    </children>
 </Pane>

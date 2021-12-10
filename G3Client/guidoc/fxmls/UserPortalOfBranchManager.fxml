@@ -6,19 +6,19 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="503.0" prefWidth="649.0" style="-fx-background-color: #7d7d7d;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers_gui.UserPortalOfBranchManagerController">
+<Pane prefHeight="503.0" prefWidth="649.0" style="-fx-background-color: #7d7d7d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers_gui.UserPortalOfBranchManagerController">
    <children>
       <Button fx:id="btnViewSysReports" layoutX="47.0" layoutY="98.0" mnemonicParsing="false" onAction="#getViewReports" prefHeight="31.0" prefWidth="255.0" text="View system reports" />
       <Button fx:id="btnCompanyRegManagement" layoutX="47.0" layoutY="138.0" mnemonicParsing="false" onAction="#getCompRegManagement" prefHeight="25.0" prefWidth="255.0" text="Company registration management" />
-      <Button fx:id="btnEditCustomerInfo" layoutX="46.0" layoutY="299.0" mnemonicParsing="false" onAction="#getEditCustomerInfo" prefHeight="31.0" prefWidth="255.0" text="Edit customer information" />
-      <Button fx:id="btnSupplierReg" layoutX="47.0" layoutY="178.0" mnemonicParsing="false" onAction="#getSupplierReg" prefHeight="31.0" prefWidth="255.0" text="Supplier registartion" />
-      <Button fx:id="btnCustomerReg" layoutX="47.0" layoutY="219.0" mnemonicParsing="false" onAction="#getCustomerReg" prefHeight="31.0" prefWidth="255.0" text="Customer registration" />
+      <Button fx:id="btnEditCustomerInfo" layoutX="47.0" layoutY="325.0" mnemonicParsing="false" onAction="#getEditCustomerInfo" prefHeight="31.0" prefWidth="255.0" text="Edit customer information" />
+      <Button fx:id="btnSupplierReg" layoutX="47.0" layoutY="174.0" mnemonicParsing="false" onAction="#getSupplierReg" prefHeight="31.0" prefWidth="255.0" text="Supplier registartion" />
+      <Button fx:id="btnCustomerReg" layoutX="47.0" layoutY="252.0" mnemonicParsing="false" onAction="#getCustomerReg" prefHeight="31.0" prefWidth="255.0" text="Customer registration" />
       <Button id="btnExit" fx:id="btnExit" layoutX="-1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#getExitBtn" prefHeight="43.0" prefWidth="36.0" style="-fx-background-color: #F25022;" text="X" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btnLogout" layoutX="235.0" layoutY="360.0" mnemonicParsing="false" onAction="#getLogoutBtn" prefHeight="51.0" prefWidth="180.0" style="-fx-background-color: #7FBA00;" text="Logout" textFill="#383838">
+      <Button fx:id="btnLogout" layoutX="235.0" layoutY="403.0" mnemonicParsing="false" onAction="#getLogoutBtn" prefHeight="51.0" prefWidth="180.0" style="-fx-background-color: #7FBA00;" text="Logout" textFill="#383838">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
@@ -28,8 +28,8 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="btnAddQuarterlyReports" layoutX="47.0" layoutY="259.0" mnemonicParsing="false" onAction="#getAddQuarterlyReports" prefHeight="31.0" prefWidth="255.0" text="Add quarterly Reports" />
-      <Label layoutX="394.0" layoutY="5.0" text="Home Screen -&gt; Login -&gt;" />
+      <Button fx:id="btnAddQuarterlyReports" layoutX="47.0" layoutY="289.0" mnemonicParsing="false" onAction="#getAddQuarterlyReports" prefHeight="31.0" prefWidth="255.0" text="Add quarterly Reports" />
+      <Label layoutX="428.0" layoutY="8.0" text="Home Screen -&gt; Login -&gt;" />
       <Label layoutX="570.0" layoutY="8.0" text="Main Screen">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -45,5 +45,13 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Text>
+      <Label layoutX="47.0" layoutY="364.0" text="Status:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fx:id="textOfStatus" layoutX="96.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="112.50733351707458" />
+      <Text fx:id="errorText" layoutX="223.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="204.07031998038292" />
+      <Button fx:id="btnSupplierReg1" layoutX="47.0" layoutY="215.0" mnemonicParsing="false" onAction="#getSupplierReg" prefHeight="31.0" prefWidth="255.0" text="Supplier Worker registartion" />
    </children>
 </Pane>

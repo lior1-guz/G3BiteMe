@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane prefHeight="503.0" prefWidth="649.0" style="-fx-background-color: #7d7d7d;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers_gui.UserPortalOfSupplierController">
+<Pane prefHeight="503.0" prefWidth="649.0" style="-fx-background-color: #7d7d7d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers_gui.UserPortalOfSupplierController">
    <children>
       <Button id="btnExit" fx:id="btnExit" layoutX="-1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#getExitBtn" prefHeight="43.0" prefWidth="36.0" style="-fx-background-color: #F25022;" text="X" textFill="WHITE">
          <font>
@@ -18,14 +18,14 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="btnLogout" layoutX="235.0" layoutY="414.0" mnemonicParsing="false" onAction="#getLogoutBtn" prefHeight="51.0" prefWidth="180.0" style="-fx-background-color: #7FBA00;" text="Logout" textFill="#383838">
+      <Button fx:id="btnLogout" layoutX="235.0" layoutY="406.0" mnemonicParsing="false" onAction="#getLogoutBtn" prefHeight="51.0" prefWidth="180.0" style="-fx-background-color: #7FBA00;" text="Logout" textFill="#383838">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
       <Button fx:id="btnManageOrders" layoutX="70.0" layoutY="154.0" mnemonicParsing="false" onAction="#getManageOrdersBtn" prefHeight="33.0" prefWidth="187.0" text="Manage orders" />
       <Button fx:id="btnManageMenu" layoutX="70.0" layoutY="113.0" mnemonicParsing="false" onAction="#getManageMenuBtn" prefHeight="33.0" prefWidth="187.0" text="Manage menu" />
-      <Label layoutX="405.0" layoutY="5.0" text="Home Screen -&gt; Login -&gt;" />
+      <Label layoutX="432.0" layoutY="8.0" text="Home Screen -&gt; Login -&gt;" />
       <Label layoutX="576.0" layoutY="8.0" text="Main Screen">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -41,5 +41,12 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Text>
+      <Label layoutX="70.0" layoutY="203.0" text="Status:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fx:id="textOfStatus" layoutX="119.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="112.50733351707458" />
+      <Text fx:id="errorText" layoutX="223.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="204.07031998038292" />
    </children>
 </Pane>
