@@ -1,8 +1,10 @@
--- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
+CREATE DATABASE  IF NOT EXISTS `semesterialproject` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `semesterialproject`;
+-- MySQL dump 10.13  Distrib 8.0.26, for Win64 (x86_64)
 --
 -- Host: localhost    Database: semesterialproject
 -- ------------------------------------------------------
--- Server version	8.0.27
+-- Server version	8.0.26
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -114,7 +116,7 @@ CREATE TABLE `businesscustomer` (
 
 LOCK TABLES `businesscustomer` WRITE;
 /*!40000 ALTER TABLE `businesscustomer` DISABLE KEYS */;
-INSERT INTO `businesscustomer` VALUES ('1002','PENDING_APPROVAL','hrmanagerFirstname','hrmanagerLastname','NORTH',0,5001,'hrmanagerEmail@Intel.com','10022','3002',0,'Intel','WEEKLY',200,31062,0);
+INSERT INTO `businesscustomer` VALUES ('1002','CONFIRMED','hrmanagerFirstname','hrmanagerLastname','NORTH',0,5001,'hrmanagerEmail@Intel.com','10022','3002',0,'Intel','WEEKLY',200,31062,0);
 /*!40000 ALTER TABLE `businesscustomer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -197,7 +199,7 @@ CREATE TABLE `creditcard` (
 
 LOCK TABLES `creditcard` WRITE;
 /*!40000 ALTER TABLE `creditcard` DISABLE KEYS */;
-INSERT INTO `creditcard` VALUES ('1000','01/35','111'),('1001','01/35','111'),('3000','01/35','111'),('3002','01/35','111'),('3005','111','01/35'),('3006','111','01/35');
+INSERT INTO `creditcard` VALUES ('1000','01/35','111'),('3000','01/35','111'),('30005','111','01/35'),('30006','111','01/35'),('30008','111','01/35'),('3002','01/35','111'),('3005','111','01/35'),('3006','111','01/35');
 /*!40000 ALTER TABLE `creditcard` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -297,7 +299,7 @@ CREATE TABLE `item_in_menu` (
 
 LOCK TABLES `item_in_menu` WRITE;
 /*!40000 ALTER TABLE `item_in_menu` DISABLE KEYS */;
-INSERT INTO `item_in_menu` VALUES ('Big Mac','5555','MAIN','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/BigMac.jpg',28),('Big Mac','5556','MAIN','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/BigMac.jpg',28),('Ceaser Salad','2222','SALAD','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/pizza-hut-ceaser.jpg',33),('Ceaser Salad','2223','SALAD','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/pizza-hut-ceaser.jpg',25),('Chicken Salad','1111','SALAD','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/dominos-salad.jpg',33),('Chicken Salad','1112','SALAD','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/dominos-salad.jpg',33),('Chicken Wings','1111','FIRST','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/dominos-wings.jpg',25),('Chicken Wings','1112','FIRST','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/dominos-wings.jpg',25),('Chicken Wings','2222','FIRST','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/dominos-wings.jpg',25),('Chicken Wings','2223','FIRST','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/dominos-wings.jpg',25),('Coke','1111','DRINK','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/Coca-Cola.jpg',12),('Coke','1112','DRINK','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/Coca-Cola.jpg',12),('Coke','2222','DRINK','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/Coca-Cola.jpg',12),('Coke','2223','DRINK','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/Coca-Cola.jpg',12),('Coke','5555','DRINK','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/Coca-Cola.jpg',12),('Coke','5556','DRINK','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/Coca-Cola.jpg',12),('Lava Cake','1111','DESSERT','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/dominos-cake.jpg',17),('Lava Cake','1112','DESSERT','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/dominos-cake.jpg',17),('Lava Cake','2222','DESSERT','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/dominos-cake.jpg',17),('Lava Cake','2223','DESSERT','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/dominos-cake.jpg',17),('Mac Fries','5555','FIRST','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/Fries.jpg',18),('Mac Fries','5556','FIRST','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/Fries.jpg',18),('Mac Salad','5555','SALAD','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/MacSalad.jpg',25),('Mac Salad','5556','SALAD','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/MacSalad.jpg',25),('Olives','2222','MAIN','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/pizza-hut-olives.jpg',38),('Olives','2223','MAIN','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/pizza-hut-olives.jpg',55),('Pepperoni','1111','MAIN','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/dominos-pepperoni.jpg',55),('Pepperoni','1112','MAIN','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/dominos-pepperoni.jpg',55),('Quarter Pounder','5555','MAIN','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/QuarterPounder.jpg',45),('Quarter Pounder','5556','MAIN','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/QuarterPounder.jpg',45),('Sunday','5555','DESSERT','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/Sunday.jpg',10),('Sunday','5556','DESSERT','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/Sunday.jpg',10);
+INSERT INTO `item_in_menu` VALUES ('burger','5555','MAIN','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultMain.jpg',45),('burger','5556','MAIN','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultMain.jpg',45),('caesar','1111','SALAD','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultSalad.jpg',25),('caesar','1112','SALAD','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultSalad.jpg',25),('caesar','2222','SALAD','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultSalad.jpg',25),('caesar','2223','SALAD','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultSalad.jpg',25),('cola','1111','DRINK','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultDrink.jpg',12),('cola','1112','DRINK','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultDrink.jpg',12),('cola','2222','DRINK','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultDrink.jpg',12),('cola','2223','DRINK','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultDrink.jpg',12),('cola','5555','DRINK','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultDrink.jpg',12),('cola','5556','DRINK','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultDrink.jpg',12),('fries','1111','FIRST','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultFirst.jpg',14),('fries','1112','FIRST','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultFirst.jpg',14),('fries','2222','FIRST','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultFirst.jpg',14),('fries','2223','FIRST','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultFirst.jpg',14),('fries','5555','FIRST','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultFirst.jpg',14),('fries','5556','FIRST','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultFirst.jpg',14),('ice cream','1111','DESSERT','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultDessert.jpg',12),('ice cream','1112','DESSERT','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultDessert.jpg',12),('ice cream','2222','DESSERT','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultDessert.jpg',12),('ice cream','2223','DESSERT','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultDessert.jpg',12),('pie','5555','DESSERT','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultDessert.jpg',12),('pie','5556','DESSERT','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultDessert.jpg',12),('pizza','1111','MAIN','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultMain.jpg',45),('pizza','1112','MAIN','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultMain.jpg',45),('pizza','2222','MAIN','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultMain.jpg',45),('pizza','2223','MAIN','LARGE','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultMain.jpg',45),('SSA','2222','DRINK','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultSalad.jpg',10),('Test26','2222','FIRST','REGULAR','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultFirst.jpg',10),('tuna salad','5555','SALAD','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultSalad.jpg',25),('tuna salad','5556','SALAD','SMALL','File:///C:/G3BiteMe/Design/ItemsImageBank/defaultSalad.jpg',25);
 /*!40000 ALTER TABLE `item_in_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -361,7 +363,7 @@ CREATE TABLE `order` (
   PRIMARY KEY (`orderNumber`),
   KEY `order_supplierId_idx` (`supplierId`),
   CONSTRAINT `order_supplierId` FOREIGN KEY (`supplierId`) REFERENCES `supplier` (`supplierId`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=80 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -370,7 +372,7 @@ CREATE TABLE `order` (
 
 LOCK TABLES `order` WRITE;
 /*!40000 ALTER TABLE `order` DISABLE KEYS */;
-INSERT INTO `order` VALUES (13,'1112','1000','customer','NORTH','PRE','PENDING_APPROVAL','2021-12-22 18:57:24','2021-12-22 22:00:00',NULL,'DELIVERY',58,'hfg','fgdh','dfgs','456',25,'caesar,fries,','null,null,','REGULAR',0,0),(14,'1112','1002','businesscustomer','NORTH','REGULAR','PENDING_APPROVAL','2021-12-22 19:31:08','2021-12-22 20:00:00',NULL,'DELIVERY',49,'dfsga','sdgf','xcvz','345',25,'ice cream,cola,','null,null,','REGULAR',0,0),(15,'5555','1000','customer','NORTH','REGULAR','PENDING_APPROVAL','2021-12-24 15:53:36','2021-12-24 17:00:00',NULL,'TAKE_AWAY',81,'Test','test2','','1122',0,'burger,cola,cola,pie,','null,null,null,null,','NA',0,0),(16,'5555','1000','customer','NORTH','REGULAR','PENDING_APPROVAL','2021-12-24 15:59:31','2021-12-24 17:00:00',NULL,'DELIVERY',51,'Mosa','Srour','Raanan','123123',25,'cola,fries,','null,null,','REGULAR',0,0),(17,'5555','1000','customer','NORTH','REGULAR','PENDING_APPROVAL','2021-12-24 16:01:45','2021-12-24 18:00:00',NULL,'DELIVERY',37,'ss','ss','as','123',25,'cola,','null,','REGULAR',0,0),(18,'5555','1002','businesscustomer','NORTH','REGULAR','PENDING_APPROVAL','2021-12-24 16:07:43','2021-12-24 18:00:00',NULL,'DELIVERY',37,'s','s','s2s2','2',25,'pie,','null,','REGULAR',0,0),(19,'5555','1002','businesscustomer','NORTH','REGULAR','PENDING_APPROVAL','2021-12-24 16:12:19','2021-12-24 18:00:00',NULL,'DELIVERY',70,'sds','sds','sasd','12321',25,'burger,','null,','REGULAR',0,0),(20,'1112','1000','customer','NORTH','REGULAR','PENDING_APPROVAL','2021-12-24 16:13:41','2021-12-24 17:00:00',NULL,'DELIVERY',70,'asd','asd','s','32432s',25,'pizza,','null,','REGULAR',0,0),(21,'1112','1000','customer','NORTH','REGULAR','PENDING_APPROVAL','2021-12-24 20:29:33','2021-12-24 21:00:00',NULL,'TAKE_AWAY',40,'mm','mm','','12321',0,'fries,fries,ice cream,','null,big,small,','NA',0,0),(22,'2222','1000','customer','SOUTH','REGULAR','PENDING_APPROVAL','2021-12-26 21:59:19','2021-12-26 23:00:00',NULL,'TAKE_AWAY',12,'ss','ss','','333',0,'cola,','null,','NA',0,0),(23,'2222','1000','customer','SOUTH','REGULAR','PENDING_APPROVAL','2021-12-26 22:00:18','2021-12-26 23:00:00',NULL,'TAKE_AWAY',37,'sds','dsds','','121',0,'caesar,cola,','null,null,','NA',0,0);
+INSERT INTO `order` VALUES (78,'2222','1000','customer','SOUTH','REGULAR','UN_APPROVED',NULL,'2021-12-30 00:00:00',NULL,'TAKE_AWAY',25,'d','d','','023',0,'caesar,','null,','NA',1,0),(79,'2222','1000','customer','SOUTH','REGULAR','UN_APPROVED',NULL,'2021-12-30 00:00:00',NULL,'TAKE_AWAY',25,'s','s','','02213',0,'caesar,','null,','NA',0,0);
 /*!40000 ALTER TABLE `order` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -491,7 +493,7 @@ CREATE TABLE `supplier` (
 
 LOCK TABLES `supplier` WRITE;
 /*!40000 ALTER TABLE `supplier` DISABLE KEYS */;
-INSERT INTO `supplier` VALUES ('1111','Domino\'s Pizza','CENTER','support@dominos.com','100001111',7.8,'PENDING_REGISTRATION'),('1112','Domino\'s Pizza','NORTH','support@dominos.com','100001111',9.8,'CONFIRMED'),('2222','Pizza Hut','SOUTH','support@pizzahut.com','100002222',10,'CONFIRMED'),('2223','Pizza Hut','CENTER','support@pizzahut.com','100002222',12,'PENDING_REGISTRATION'),('5555','McDonald\'s','NORTH','support@mcdonalds.com','100005555',11.3,'CONFIRMED'),('5556','McDonald\'s','CENTER','support@mcdonalds.com','100005555',7.2,'PENDING_REGISTRATION');
+INSERT INTO `supplier` VALUES ('1111','Dominos','CENTER','support@dominos.com','100001111',7.8,'PENDING_REGISTRATION'),('1112','Dominos','NORTH','support@dominos.com','100001111',9.8,'CONFIRMED'),('2222','PizzaHut','SOUTH','support@pizzahut.com','100002222',10,'CONFIRMED'),('2223','PizzaHut','CENTER','support@pizzahut.com','100002222',12,'PENDING_REGISTRATION'),('5555','Mcdonalds','NORTH','support@mcdonalds.com','100005555',11.3,'CONFIRMED'),('5556','Mcdonalds','CENTER','support@mcdonalds.com','100005555',7.2,'PENDING_REGISTRATION');
 /*!40000 ALTER TABLE `supplier` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -524,7 +526,7 @@ CREATE TABLE `supplierworker` (
 
 LOCK TABLES `supplierworker` WRITE;
 /*!40000 ALTER TABLE `supplierworker` DISABLE KEYS */;
-INSERT INTO `supplierworker` VALUES ('2000','CONFIRMED','PHWfirstName','PHWlastname','SOUTH',0,'phw@pizzahut.com','1000211','2222','CERTIFIED'),('2001','CONFIRMED','PHWfirstName','PHWlastname','SOUTH',0,'phw@pizzahut.com','1000222','2222','REGULAR'),('2002','CONFIRMED','MN','MN','NORTH',1,'mnw@mac.com','1002234','5555','CERTIFIED');
+INSERT INTO `supplierworker` VALUES ('2000','CONFIRMED','PHWfirstName','PHWlastname','SOUTH',0,'phw@pizzahut.com','1000211','2222','CERTIFIED'),('2001','CONFIRMED','PHWfirstName','PHWlastname','SOUTH',0,'phw@pizzahut.com','1000222','2222','REGULAR'),('2002','CONFIRMED','MN','MN','NORTH',0,'mnw@mac.com','1002234','5555','CERTIFIED');
 /*!40000 ALTER TABLE `supplierworker` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -537,4 +539,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-30 17:33:26
+-- Dump completed on 2021-12-30 19:34:40
