@@ -192,149 +192,118 @@ public class Order implements Serializable {
 		return orderNumber;
 	}
 
-
 	public void setOrderNumber(int orderNumber) {
 		this.orderNumber = orderNumber;
 	}
-
 
 	public String getSupplierUserId() {
 		return supplierUserId;
 	}
 
-
 	public void setSupplierUserId(String supplierUserId) {
 		this.supplierUserId = supplierUserId;
 	}
-
 
 	public String getCustomerUserId() {
 		return customerUserId;
 	}
 
-
 	public void setCustomerUserId(String customerUserId) {
 		this.customerUserId = customerUserId;
 	}
-
 
 	public Branch getBranch() {
 		return branch;
 	}
 
-
 	public void setBranch(Branch branch) {
 		this.branch = branch;
 	}
-
 
 	public OrderTimeType getTimeType() {
 		return timeType;
 	}
 
-
 	public void setTimeType(OrderTimeType timeType) {
 		this.timeType = timeType;
 	}
-
 
 	public OrderStatus getStatus() {
 		return status;
 	}
 
-
 	public void setStatus(OrderStatus status) {
 		this.status = status;
 	}
-
 
 	public Date getIssueDateTime() {
 		return issueDateTime;
 	}
 
-
 	public void setIssueDateTime(Date issueDateTime) {
 		this.issueDateTime = issueDateTime;
 	}
-
+	
 	public SupplyType getSupplyType() {
 		return supplyType;
 	}
-
 
 	public void setSupplyType(SupplyType supplyType) {
 		this.supplyType = supplyType;
 	}
 
-
 	public int getSupplyId() {
 		return supplyId;
 	}
-
 
 	public void setSupplyId(int supplyId) {
 		this.supplyId = supplyId;
 	}
 
-
 	public double getTotalPrice() {
 		return totalPrice;
 	}
-
 
 	public void setTotalPrice(double totalPrice) {
 		this.totalPrice = totalPrice;
 	}
 
-
 	public Date getEstimatedSupplyDateTime() {
 		return estimatedSupplyDateTime;
 	}
-
 
 	public void setEstimatedSupplyDateTime(Date estimatedSupplyDateTime) {
 		this.estimatedSupplyDateTime = estimatedSupplyDateTime;
 	}
 
-	
-
 	public Date getActualSupplyDateTime() {
 		return actualSupplyDateTime;
 	}
-
-
 
 	public void setActualSupplyDateTime(Date actualSupplyDateTime) {
 		this.actualSupplyDateTime = actualSupplyDateTime;
 	}
 	
-	
-
 	public AbatractSupplyMethod getSupplyMethodInformation() {
 		return supplyMethodInformation;
 	}
-
 
 	public void setSupplyMethodInformation(AbatractSupplyMethod supplyMethodInformation) {
 		this.supplyMethodInformation = supplyMethodInformation;
 	}
 	
-
 	public String getCustomerUserType() {
 		return customerUserType;
 	}
-
 
 	public void setCustomerUserType(String customerUserType) {
 		this.customerUserType = customerUserType;
 	}
 
-
 	public String getReceiverPhoneNumber() {
 		return supplyMethodInformation.getReceiverPhoneNumber();
 	}
 
-	
 	/**
 	 * Help method for returning the items as Sting rather than
 	 * ArrayList in Specific way (thats why we didn't use toString();

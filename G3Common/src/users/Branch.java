@@ -2,10 +2,12 @@ package users;
 
 /**
  * 
- * @author Lior, Guzovsky
+ * @author Lior, Guzovsky.
+ * 
  *  Enum description:
  *  This Enum is used to describe the branches in the 
  *  Bite Me system.
+ *  
  *  @version 29/11/2021
  */
 public enum Branch {

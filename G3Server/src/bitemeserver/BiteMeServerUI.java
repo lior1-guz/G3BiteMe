@@ -3,12 +3,9 @@ package bitemeserver;
 import java.net.InetAddress;
 import java.net.URL;
 import java.net.UnknownHostException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.Timer;
-
 import guiserver.ClientDoc;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
@@ -32,31 +29,19 @@ import jdbc.mySqlConnection;
 import query.ImportDataQueries;
 import query.Query;
 import serveranalyze.Scheduler;
-import users.Branch;
-import users.BranchManager;
-import users.BudgetType;
-import users.CeoBiteMe;
-import users.Company;
-import users.ConfirmationStatus;
-import users.CreditCard;
-import users.HrManager;
-import users.Login;
-import users.PositionType;
-import users.Supplier;
-import users.SupplierWorker;
-import users.WorkerPosition;
 import util.Constans;
 
 /**
  * @author  Lior, Guzovsky.
- * Class description: 
  * 
+ * Class description: 
  * This is a class that works as an
  * UI for the server.
  * 
  * @version 26/12/2021
  */
-public class BiteMeServerUI extends Application implements Initializable {
+public class BiteMeServerUI extends Application implements Initializable{
+	
 	/**
 	 * Class members description:
 	 */
@@ -100,6 +85,7 @@ public class BiteMeServerUI extends Application implements Initializable {
 	public static ArrayList<String> console=new ArrayList<>();
 	public static ObservableList<ClientDoc> clients = FXCollections.observableArrayList();
 	private boolean isImportButtonClicked = false;
+	
 	/**
 	* An FXML loader instance.
 	*/
@@ -135,7 +121,6 @@ public class BiteMeServerUI extends Application implements Initializable {
 	@FXML
 	private TextArea txtConsole;
 	
-
     @FXML
     private TableView<ClientDoc> clientsTable;
 
@@ -148,7 +133,9 @@ public class BiteMeServerUI extends Application implements Initializable {
     @FXML
     private TableColumn<ClientDoc, String> statusCol;
     
-
+    /**
+	* Getters and setters
+	*/
 	private String getport() {
 		return portxt.getText();
 	}
@@ -186,7 +173,7 @@ public class BiteMeServerUI extends Application implements Initializable {
 		primaryStage.show();
 	}
 	
-	/* insert all the information for the Server configuration screen */
+	/** insert all the information for the Server configuration screen */
 	private void loadInfo() {
 		this.portxt.setText(String.valueOf(DEFAULT_PORT));
 		try {

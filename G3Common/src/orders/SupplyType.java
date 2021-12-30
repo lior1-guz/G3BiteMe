@@ -3,8 +3,10 @@ package orders;
 /**
  * 
  * @author Ori, Malka.
+ * 
  *  Enum description:
  *  This Enum is used to describe the order supply method.
+ *  
  *  @version 11/12/2021
  */
 public enum SupplyType {

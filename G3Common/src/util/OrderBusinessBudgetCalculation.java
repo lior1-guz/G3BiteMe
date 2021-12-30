@@ -4,7 +4,8 @@ import users.BusinessCustomer;
 
 /**
 * 
-* @author Lior, Guzovsky
+* @author Lior, Guzovsky.
+* 
 *  Class description:
 *  This is a util class for calculating the 
 *  money left for any customer who is at least

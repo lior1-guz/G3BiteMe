@@ -2,15 +2,15 @@ package orders;
 
 /**
  * 
- * @author Lior, Guzovsky
- * @author Shimon, Rubin
+ * @author Lior, Guzovsky.
+ * @author Shimon, Rubin.
+ * 
  * Class description: 
  * This is an Enum for 
  * the way we pay in the system
  * used for picking the fields for 
  * the combo box in the payment configuration
  * screen in the order process.
- * 
  * 
  * @version 17/12/2021
  */

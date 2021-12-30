@@ -98,6 +98,7 @@ public class DeliverySupplyMethod extends AbatractSupplyMethod implements Serial
 	
 	/**
 	 * This methods determine the delivery fee.
+	 * 
 	 * @return double: the delivery fee
 	 */
 	private double calculateDeliveryFee() {
@@ -149,7 +150,5 @@ public class DeliverySupplyMethod extends AbatractSupplyMethod implements Serial
 	public void setDeliveryType(DeliveryType deliveryType) {
 		this.deliveryType = deliveryType;
 	}
-	
-	
 	
 }

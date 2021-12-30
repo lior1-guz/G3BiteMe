@@ -1,12 +1,13 @@
 package orders;
 import java.io.Serializable;
-import java.util.ArrayList;
-import javafx.scene.image.ImageView;
+
 /**
  * 
  * @author Ori, Malka.
+ * 
  *  Class description:
  *  This calss describes the Item Entity.
+ *  
  * @version 11/12/2021
  */
 public class Item implements Serializable{
@@ -153,12 +154,10 @@ public class Item implements Serializable{
 		this.comment = comment;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Item [SupplierUserId=" + SupplierUserId + ", ItemName=" + ItemName + ", category=" + category
 				+ ", size=" + size + ", picturePath=" + picturePath + ", price=" + price + ", comment=" + comment + "]";
 	}
-	
 	
 }

@@ -8,17 +8,19 @@ import java.util.Date;
 /**
  * 
  * @author Ori, Malka.
+ * 
  *  Class description:
  *  This class helps us to handle time and date (DB<->GUI).
+ *  
  * @version 11/12/2021
  */
 public class DateTimeHandler {
 
 
 	/**
+	 * This method...
 	 * 
-	 * @param date: Expected date in DD/MM/YYYY format, received from the JavaFX
-	 *              date picker.
+	 * @param date: Expected date in DD/MM/YYYY format, received from the JavaFX date picker.
 	 * @param time:
 	 * @return Date: - MySql Format DateTime variable.
 	 */
@@ -38,6 +40,8 @@ public class DateTimeHandler {
 	}
 	
 	/**
+	 * This method...
+	 * 
 	 * @param datetime: Expected datetime in yyyy/MM/dd HH:mm:ss format, received from mySql.
 	 * @return Date: - MySql Format.
 	 */
@@ -58,6 +62,8 @@ public class DateTimeHandler {
 	}
 
 	/**
+	 * This method...
+	 * 
 	 * @param date: MySql DateTime format variable.
 	 * @return String: returns the date in string in MySql DateTime format.
 	 */
@@ -70,6 +76,8 @@ public class DateTimeHandler {
 	}
 
 	/**
+	 * This method...
+	 * 
 	 * @return String: returns the date in string in MySql DateTime format.
 	 */
 	public static String getTimeNowInMySqlDateTimeFormat_String() {
@@ -77,6 +85,8 @@ public class DateTimeHandler {
 	}
 
 	/**
+	 * This method...
+	 * 
 	 * @return Date: returns the date now.
 	 */
 	public static Date getTimeNowInMySqlDateTimeFormat_Date() {

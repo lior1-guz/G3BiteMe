@@ -4,7 +4,8 @@ import java.io.Serializable;
 
 /**
  * 
- * @author Mousa,Srour
+ * @author Mousa, Srour.
+ * 
  * Class description: 
  * This class is derived class from User For Registration class
  *  which means that we still don't know this user is going to be registered as
@@ -13,6 +14,7 @@ import java.io.Serializable;
  * @version 12/12/2021
  */
 public class UserForRegistration implements Serializable {
+	
 	/**
 	 * Class members description:
 	 */	
@@ -65,6 +67,9 @@ public class UserForRegistration implements Serializable {
 		this.password = password;
 	}
 
+	/**
+	 * Getters and setters
+	 */
 	public String getUserID() {
 		return userID;
 	}

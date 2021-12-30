@@ -4,6 +4,9 @@ import java.io.Serializable;
 
 public class OrderForView implements Serializable{
 	
+	/**
+	 * Class members description:
+	 */
 	private int orderNum;
 	private String resturantName;
 	private String orderDate;
@@ -22,6 +25,9 @@ public class OrderForView implements Serializable{
 		this.orderNum = orderNum;
 	}
 	
+	/**
+	 * Getters and setters method
+	 */
 	public int getOrderNum() {
 		return orderNum;
 	}

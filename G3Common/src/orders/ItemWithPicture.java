@@ -5,8 +5,10 @@ import javafx.scene.image.ImageView;
 /**
  * 
  * @author Ori, Malka.
+ * 
  *  Class description:
  *  This class wraps the item, to add a picture;
+ *  
  * @version 26/12/2021
  */
 public class ItemWithPicture {
@@ -45,7 +47,6 @@ public class ItemWithPicture {
 	 */
 	public String picturePath;
 	
-	
 	public ItemWithPicture(Item item) {
 		this.item = item;
 		this.picture = new ImageView(new Image(item.getPicturePath(),64,64,false,true));
@@ -54,9 +55,11 @@ public class ItemWithPicture {
 		this.size = item.getSize();
 		this.price = item.getPrice();
 		this.picturePath = item.getPicturePath();
-		
 	}
 	
+	/**
+	 * Getters and Setters:
+	 */
 	public Item getItem() {
 		return item;
 	}

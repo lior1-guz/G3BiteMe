@@ -14,6 +14,10 @@ public class DataLists {
 	private static String defaultDrinkPicturePath = "File:///C:/G3BiteMe/Design/ItemsImageBank/defaultDrink.jpg";
 	private static String defaultFirstPicturePath = "File:///C:/G3BiteMe/Design/ItemsImageBank/defaultFirst.jpg";
 	private static String defaulMainPicturePath = "File:///C:/G3BiteMe/Design/ItemsImageBank/defaultMain.jpg";
+	
+	/**
+	 * Getters
+	 */
 	public static ArrayList<String> getNorthCitys() {
 		return northCitys;
 	}
