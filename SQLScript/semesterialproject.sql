@@ -2,7 +2,7 @@ CREATE DATABASE  IF NOT EXISTS `semesterialproject` /*!40100 DEFAULT CHARACTER S
 USE `semesterialproject`;
 -- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: semesterialproject
+-- Host: localhost    Database: semesterialproject
 -- ------------------------------------------------------
 -- Server version	8.0.27
 
@@ -117,7 +117,7 @@ CREATE TABLE `businesscustomer` (
 
 LOCK TABLES `businesscustomer` WRITE;
 /*!40000 ALTER TABLE `businesscustomer` DISABLE KEYS */;
-INSERT INTO `businesscustomer` VALUES ('10000','CONFIRMED','Mousa','Srour','NORTH',0,5002,'mousa.srour@gmail.com','0544441212','1000','Apple','MONTHLY',10,310000,0),('1002','CONFIRMED','Natalie','Saren','NORTH',0,5001,'natalie.business@gmail.com','10022','4001','Intel','WEEKLY',200,31062,0);
+INSERT INTO `businesscustomer` VALUES ('10000','CONFIRMED','Mousa','Srour','NORTH',0,5002,'mousa.srour@gmail.com','0544441212','1000','Apple','MONTHLY',10,310000,0),('1002','CONFIRMED','Natalie','Saren','NORTH',0,5001,'natalie.business@gmail.com','10022','4001','Intel','WEEKLY',200,31062,0),('10020','PENDING_APPROVAL','Sar','ssas','NORTH',0,5002,'ssas.sar@gmail.com','0544441212','2312','Apple','MONTHLY',10,300600,0);
 /*!40000 ALTER TABLE `businesscustomer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -201,7 +201,7 @@ CREATE TABLE `creditcard` (
 
 LOCK TABLES `creditcard` WRITE;
 /*!40000 ALTER TABLE `creditcard` DISABLE KEYS */;
-INSERT INTO `creditcard` VALUES ('1000','111','01/35'),('1004','111','01/35'),('4000','111','11/20'),('4001','222','12/25');
+INSERT INTO `creditcard` VALUES ('1000','111','01/35'),('1004','111','01/35'),('2312','190','11/12'),('4000','111','11/20'),('4001','222','12/25');
 /*!40000 ALTER TABLE `creditcard` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -327,7 +327,7 @@ CREATE TABLE `login` (
 
 LOCK TABLES `login` WRITE;
 /*!40000 ALTER TABLE `login` DISABLE KEYS */;
-INSERT INTO `login` VALUES ('cu','cu','1000','customer'),('mousa','mousa','10000','businesscustomer'),('lior','lior','10004','customer'),('ceo','ceo','1001','ceobiteme'),('bc','bc','1002','businesscustomer'),('bmn','bmn','1041','branchmanager'),('bms','bms','1042','branchmanager'),('bmc','bmc','1043','branchmanager'),('intelhr','intelhr','1222','hrmanager'),('applehr','applehr','1333','hrmanager'),('phsw','phsw','2000','supplierworker'),('phsrw','phsrw','2001','supplierworker'),('mnw','mnw','2002','supplierworker'),('phswm','phswm','2003','supplierworker'),('microsofthr','microsofthr','30000','hrmanager'),('nvidiahr','nvidiahr','30001','hrmanager'),('danhr','danhr','30002','hrmanager'),('bbbcc','bbbcc','40000','supplierworker'),('bbbcr','bbbcr','40001','supplierworker'),('bbbnc','bbbnc','40002','supplierworker'),('bbbnr','bbbnr','40003','supplierworker'),('bbbsc','bbbsc','40004','supplierworker'),('bbbsn','bbbsn','40005','supplierworker'),('agadircc','agadircc','40006','supplierworker'),('agadircr','agadircr','40007','supplierworker'),('agadirnc','agadircc','40008','supplierworker'),('agadirnr','agadirnr','40009','supplierworker'),('agadirsc','agadirsc','40010','supplierworker'),('agadirsr','agadirsr','40011','supplierworker'),('bbbcm','bbbcm','40012','supplierworker'),('bbbnm','bbbnm','40013','supplierworker'),('bbbsm','bbbsm','40014','supplierworker'),('agadircm','agadircm','40015','supplierworker'),('agadirnm','agadircm','40016','supplierworker'),('agadirsm','agadirsm','40017','supplierworker'),('dpnm','dpnm','40019','supplierworker');
+INSERT INTO `login` VALUES ('cu','cu','1000','customer'),('mousa','mousa','10000','businesscustomer'),('lior','lior','10004','customer'),('ceo','ceo','1001','ceobiteme'),('bc','bc','1002','businesscustomer'),('sar','sar','10020','businesscustomer'),('bmn','bmn','1041','branchmanager'),('bms','bms','1042','branchmanager'),('bmc','bmc','1043','branchmanager'),('intelhr','intelhr','1222','hrmanager'),('applehr','applehr','1333','hrmanager'),('phsw','phsw','2000','supplierworker'),('phsrw','phsrw','2001','supplierworker'),('mnw','mnw','2002','supplierworker'),('phswm','phswm','2003','supplierworker'),('microsofthr','microsofthr','30000','hrmanager'),('nvidiahr','nvidiahr','30001','hrmanager'),('danhr','danhr','30002','hrmanager'),('bbbcc','bbbcc','40000','supplierworker'),('bbbcr','bbbcr','40001','supplierworker'),('bbbnc','bbbnc','40002','supplierworker'),('bbbnr','bbbnr','40003','supplierworker'),('bbbsc','bbbsc','40004','supplierworker'),('bbbsn','bbbsn','40005','supplierworker'),('agadircc','agadircc','40006','supplierworker'),('agadircr','agadircr','40007','supplierworker'),('agadirnc','agadircc','40008','supplierworker'),('agadirnr','agadirnr','40009','supplierworker'),('agadirsc','agadirsc','40010','supplierworker'),('agadirsr','agadirsr','40011','supplierworker'),('bbbcm','bbbcm','40012','supplierworker'),('bbbnm','bbbnm','40013','supplierworker'),('bbbsm','bbbsm','40014','supplierworker'),('agadircm','agadircm','40015','supplierworker'),('agadirnm','agadircm','40016','supplierworker'),('agadirsm','agadirsm','40017','supplierworker'),('dpnm','dpnm','40019','supplierworker');
 /*!40000 ALTER TABLE `login` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -542,4 +542,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-06 17:42:18
+-- Dump completed on 2022-01-07  1:06:42
