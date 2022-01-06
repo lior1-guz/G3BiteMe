@@ -73,8 +73,8 @@ public class LoginQueries_Test{
 	private String idForHR = "1222";
 
 	/*User name and password for pending approval user account*/
-	private String userNameForPendingApprovalStatusUser = "mousa";
-	private String passwordForPendingApprovalStatusUser = "mousa";
+	private String userNameForPendingApprovalStatusUser = "sar";
+	private String passwordForPendingApprovalStatusUser = "sar";
 
 	/*User name and password and ID for Frozen user account*/
 	private String userNameForFrozenStatusUser = "lior";
@@ -267,7 +267,7 @@ public class LoginQueries_Test{
 
 	@Test
 	//Test Description: Check if user that not confirmed return the right answer from the server
-	//Test Input: userNameForPendingApprovalStatusUser = "mousa" , passwordForPendingApprovalStatusUser = "mousa"
+	//Test Input: userNameForPendingApprovalStatusUser = "sar" , passwordForPendingApprovalStatusUser = "sar"
 	//Test Expected Output: Message received with Answer.ERROR_USER_NOT_CONFIRMED
    public void test_user_pending_approval() {
 
